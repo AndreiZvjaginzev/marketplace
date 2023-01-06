@@ -1,0 +1,44 @@
+.Button{
+    display: block;
+}
+.ButtonLogin{
+    background-color: #8224e3;
+    background-image: linear-gradient(to right, #8224e3 0, #a968ec 50%, #8224e3 100%);
+    box-shadow: 0 1px 2px 0 rgb(130 36 227 / 50%);
+    color: #fff;
+    width: 290px;
+    height: 42px;
+    border-radius: 30px;
+    text-align: center;
+    background-size: 200%;
+    display: inline-block;
+    padding: 0.375rem 2rem;
+    padding-top: calc(0.375rem + 1px);
+    padding-bottom: calc(0.375rem + 1px);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ButtonLogin:hover{
+    background-position: right center;
+}
+
+
+$menuButtonColor: #8224e3;
+
+
+.MenuButton{
+    color: $menuButtonColor;
+}
+.Navbutton{
+    color: #000;
+    margin: 10px;
+
+}
+
+.disabled {
+    background-color: #c4c4c4;
+    background-image: none;
+}
+

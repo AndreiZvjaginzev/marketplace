@@ -1,0 +1,68 @@
+.ProfileNavigateWidget {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
+  &__items {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    padding-top: 10px;
+    border-radius: 15px;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    color: #838daa;
+    & > svg {
+      font-size: 18px;
+    }
+    &.active {
+      background: linear-gradient(135deg, #c395f1 0%, #8224e3 75%);
+      box-shadow: 0 10px 20px -8px rgb(58 46 68 / 70%);
+      color: #fff;
+    }
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+// @media(max-width: 1700px) {
+//   .ProfileNavigateWidget {
+//     &__items {
+//       width: 83%;
+//     }
+//   }
+// }
+
+// @media(max-width: 1600px) {
+//   .ProfileNavigateWidget {
+//     &__items {
+//       width: 95%;
+//     }
+//   }
+// }
+
+// @media(max-width: 1100px) {
+//   .ProfileNavigateWidget {
+//     &__items {
+//       width: 83%;
+//     }
+//   }
+// }
+
+// @media(max-width: 940px) {
+//   .ProfileNavigateWidget {
+//     &__items {
+//       width: 90%;
+//     }
+//   }
+// }
+
+@media(max-width: 840px) {
+  .ProfileNavigateWidget {
+    display: none;
+  }
+}

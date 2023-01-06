@@ -1,0 +1,11 @@
+.SearchField {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  color: #838daa;
+  & input {
+    padding: 5px 15px;
+    width: 90%;
+  }
+}

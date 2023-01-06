@@ -1,0 +1,29 @@
+.InputField{
+    position: relative;
+    input{
+        background-color: #f7f7f7;
+        display: block;
+        height: 2.5rem;
+        width: 100%;
+        padding: 0.375rem 1rem;
+        border: 1px solid transparent;
+        border-radius: 1.25rem;
+        color: #626c72;
+        margin-bottom: 0.5rem;
+        padding-left: calc(calc(2.5rem - 2px) + 10px);
+    }
+    input:focus{
+        border: 1px solid #8224e3;
+    }
+    .error{
+        width: 100%;
+        color: #4f515b;
+        font-size: 17px;
+    }
+    .errorBorder,
+    .errorBorder:focus {
+        border: 1px solid #f00;
+    }
+}
+
+

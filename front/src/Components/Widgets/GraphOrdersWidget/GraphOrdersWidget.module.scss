@@ -1,0 +1,27 @@
+.GraphOrdersWidget {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  user-select: none;
+  &__title {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -40px;
+    top: 45%;
+  }
+  & > svg {
+    position: absolute;
+    top:  5px;
+    left: 5px;
+    color: #fff;
+    cursor: grab;
+    z-index: 1;
+    user-select: none;
+  }
+  & > div {
+    margin: 0 auto;
+  }
+}

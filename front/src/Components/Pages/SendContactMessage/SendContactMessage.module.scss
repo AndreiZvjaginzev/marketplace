@@ -1,0 +1,65 @@
+.SendContactMessage{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.SendContactMessageWrap{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SendContactMessageHeader{
+    font-size: 1.5rem;
+    padding: 2% 0;
+    width: 100%;
+    text-align: center;
+}
+.SendContactMessageInput{
+    width: 100%;
+
+}
+.SendContactMessageInputGroup{
+    width: 100%;
+    display: flex;
+    
+}
+.SendContactMessageEmail{
+    width: 50%;
+}
+.SendBtn{
+    display: inline-block;
+}
+.droparea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 80vh;
+    // height: 80vh;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    font-size: 2rem;
+    position: absolute;
+    color: #000;
+    background-color: #ccc;
+    border: 3px dashed #000;
+}
+.responeGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.chatLink{
+    color: #0008ff;
+    margin-left: 10px;
+}
+.Chatredirect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

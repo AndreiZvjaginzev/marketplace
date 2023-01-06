@@ -1,0 +1,83 @@
+.AppealControlWidjet{
+    background-color: #4f5261;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4f5261;
+    border-radius: 15px;
+    .Header{
+        font-size: 16px;
+        align-self: center;
+    }
+    .TabsWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // background-color: #4f5261;
+    
+        .TabsItem{
+        border-radius: 15px; 
+        background-color: #23a5a5; 
+        padding: 5px 15px;
+        cursor: pointer;
+        }
+        .active{
+            background-color: #8224e3;
+            color: #fff;
+        }
+    }
+    .AppealWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        border-radius: 15px;
+        width: 100%;
+        .NoAppeal{
+            padding: 20%;
+        }
+        .AppealCount{
+            padding: 5px 10px;
+            box-sizing: border-box;
+            width: 5%;
+        }
+        .AppealName{
+            padding: 5px 10px;
+            box-sizing: border-box;
+            width: 10%;
+        }
+        .AppealEmail{
+            padding: 5px 10px;
+            box-sizing: border-box;
+            width: 25%;
+        }
+        .AppealStatusChange{
+            padding: 5px 10px;
+            box-sizing: border-box;
+            width: 20%;
+            .AppealStatusChangeName{
+                width: 100%;
+            }
+        }
+        .AppealStatusChange:hover{
+            color: #1bc16c;
+            cursor: pointer;
+        }
+        .AppealChat{
+            padding: 5px 10px;
+            box-sizing: border-box;
+            width: 10%;
+        }
+        .AppealChat:hover{
+            color: #1bc16c;
+            cursor: pointer;
+        }
+        .AppealMessage{
+            padding: 5px 10px;
+            box-sizing: border-box;
+            width: 20%;
+            overflow: hidden;
+        }
+    }
+}

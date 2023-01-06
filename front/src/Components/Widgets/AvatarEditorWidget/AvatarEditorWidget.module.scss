@@ -1,0 +1,85 @@
+.AvatarEditor {
+  position: relative;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgb(58 46 68 / 75%);
+  background-color: #434343;
+  border: 2px solid #fff;
+  width: 900px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  &__controlPanel {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      & > label {
+        color: #fff;
+        width: 90px;
+        margin-right: 15px;
+      }
+      & > input {
+        background-color: #fff;
+        border-radius: 50px;
+        width: 400px;
+        height: 16px;
+      }
+    }
+  }
+  & > form {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.uploadBtn {
+  cursor: pointer;
+  background-color: #8224e3;
+  box-shadow: 0 1px 2px 0 rgb(130 36 227 / 50%);
+  color: #fff;
+  padding: 10px 50px;
+  text-align: center;
+  max-width: 200px;
+  width: 200px;
+  border-radius: 50px;
+  transition: all .3s;
+  margin-right: 10px;
+  &:hover {
+    background-color: #661fad;
+    box-shadow: 0 5px 10px 0 rgb(130 36 227 / 50%);
+  }
+}
+
+.uploadNow {
+  cursor: pointer;
+  background-color: #8224e3;
+  box-shadow: 0 1px 2px 0 rgb(130 36 227 / 50%);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .3s;
+  font-size: 18px;
+  height: 46px;
+  &:hover {
+    background-color: #661fad;
+    box-shadow: 0 5px 10px 0 rgb(130 36 227 / 50%);
+  }
+}

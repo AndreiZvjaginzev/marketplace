@@ -1,0 +1,187 @@
+.UserCardLittle{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    @media (min-width: 768px) and (max-width: 1199px){
+        width: 80px;
+    }
+    @media (max-width: 767px){
+        display: none;
+    }
+
+    .backgroundDark{
+        position: relative;
+        display: flex;
+        background-color: #383a45;
+        background-image: linear-gradient(135deg, #4f5261 0%, #383a45 50%);
+
+        @media (min-width: 1400px){
+            min-height: 350px;
+        }
+        @media (min-width: 1200px) and (max-width: 1399px){
+            min-height: 300px;
+        }
+        @media (max-width: 1199px){
+            min-height: 80px;
+        }
+    }
+
+    .user_card{
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-self: center;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 15px 100px rgb(58 46 68 / 6%);
+        height: 250px;
+
+        @media (min-width: 1400px){
+            top: 200px;
+            width: 80%;
+        }
+        @media (min-width: 1200px) and (max-width: 1399px){
+            top: 150px;
+            width: 85%;
+        }
+        @media (max-width: 1199px){
+            display: none;
+        }
+
+        .profile_info{
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;  
+            width: 80%; 
+            
+            &:after{
+                content: "";
+                display: block;
+                margin: 5px 0;
+                border: 0.1px solid rgba(73%, 73%, 86%, 0.2);
+                box-sizing: border-box;
+            }
+
+            .profile_link{
+
+                .avatar_wrap{
+                    position: relative;
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid rgba(51%, 14%, 89%, 0.3);
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    .profile_avatar{
+                        position: absolute;
+                        border-radius: 50%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                    }
+                }
+                
+                .profile_name{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    transition: 0.2s;
+
+                    &:hover{
+                        color: #8224e3;
+                        text-decoration: underline;
+                        transition: 0.2s;
+                    }
+                }
+            } 
+            
+            .profile_role{
+                color: #bbbbdc;
+                font-size: 85%;
+                font-weight: 400;
+            }    
+        }
+
+        .profile_status{
+            display: flex;
+            justify-content: center;
+            color: #bbbbdc;
+            
+            .info_list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 10px;
+
+                &_count{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #626c72;
+                }
+
+                &_desc{
+                    font-size: 90%;
+                    color: #bbbbdc;
+                }
+            }
+        }
+    }
+
+    .cardBackground{
+        z-index: 1;
+        position: absolute;
+        align-self: center;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 15px 100px rgb(58 46 68 / 6%);
+        height: 50px;
+
+        @media (min-width: 1400px){
+            top: 410px;
+            min-width: 70%;
+        }
+        @media (min-width: 1200px) and (max-width: 1399px){
+            top: 360px;
+            min-width: 75%;
+        }
+        @media (max-width: 1199px){
+            display: none;
+        }
+    }
+
+    .logoVertical{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 105px;
+
+        @media (min-width: 1400px){
+            top: 80px;
+        }
+        @media (min-width: 1200px) and (max-width: 1399px){
+            top: 30px;
+        }
+        @media (max-width: 1199px){
+            display: none;
+        }   
+    }
+
+    .logoForm{
+        @media (min-width: 1200px){
+            display: none;
+        }
+        @media (max-width: 1199px){
+            align-self: center;
+            height: 50px;
+            margin: 0 auto;
+        }  
+    }  
+}
+

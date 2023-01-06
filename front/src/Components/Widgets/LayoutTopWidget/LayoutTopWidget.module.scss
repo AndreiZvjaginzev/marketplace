@@ -1,0 +1,77 @@
+
+.LayoutTopWidget {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 4;
+  background-color: #fff;
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    margin-right: 50px;
+    align-items: center;
+    & > li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      &:not(:last-child) {
+        height: 30px;
+        width: 30px;
+        background-color: #f7f7f7;
+        &:hover {
+          background-color: #c4c4c4;
+        }
+      }
+      & > ul {
+        display: none;
+        &.show {
+          display: block;
+        }
+        & > li {
+          
+        }
+      }
+    }
+  }
+}
+
+.dropDown {
+  position: relative;
+  & > a {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    border-radius: 50%;
+    & > img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    & > span {
+    }
+  }
+  .dropDown__items {
+    background-color: #fff;
+    position: absolute;
+    width: 200px;
+    box-shadow: 0 35px 35px rgb(58 46 68 / 6%);
+    top: 65px;
+    right: 0;
+    border-radius: 15px;
+  }
+  .dropDown__item {
+    padding: 5px 20px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #c4c4c4;
+    }
+    & > a {
+      display: block;
+    }
+  }
+}

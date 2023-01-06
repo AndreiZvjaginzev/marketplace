@@ -1,0 +1,59 @@
+.AdminLayout{
+    height: 100vh;
+}
+.GridWrap{
+    height: 100vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 45% 30% 5%;
+    grid-template-rows: 10% 30% 30% 30%;
+    @media (min-width: 1200px) and (max-width: 1399px){
+        grid-template-rows: 10% 20% 35% 35%;
+    }
+    @media (max-width: 1199px){
+        grid-template-columns: 80px 2fr 1fr 80px;
+    } 
+    @media (min-width: 767px) and (max-width: 990px){
+        grid-template-columns: 80px 1fr 80px;
+    }
+    @media (max-width: 766px){
+        grid-template-columns: 0px 1fr ;
+    }
+    
+}
+.leftasideinfo{
+    grid-column: 1 ;
+    grid-row: 1 / 3;
+    @media (max-width: 1199px){
+        grid-row: 1 / 2;
+    } 
+}
+.leftasidenavigate{
+    grid-column: 1 ;
+    grid-row: 3 / 5;
+    @media (max-width: 1199px){
+        grid-row: 2 / 5;
+    } 
+}
+.headersearch{
+    grid-column: 2;
+    grid-row: 1 ;
+}
+.headersocial{
+    grid-column: 3;
+    grid-row: 1;
+}
+.main{
+    grid-column: 2 ;
+    grid-row: 2 / 5;
+}
+.banner{
+    grid-column: 3;
+    grid-row: 2 / 5;
+}
+.chat{
+    grid-column: 4;
+    grid-row: 1 / 5;
+}
+
+

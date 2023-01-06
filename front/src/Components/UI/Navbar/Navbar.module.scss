@@ -1,0 +1,133 @@
+.Navbar{
+    background-color: #fff;
+    // position: fixed;
+    // right: 0;
+    // top:0;
+    // bottom:0;
+    // left: 100%;
+    width: 20%;  
+    margin-right: -20%;
+    z-index: 100;
+    transition: 1s;
+    display: flex;
+    
+}
+
+.active{
+    margin-right: 0%;
+}
+.Navbutton{
+    color: #000;
+    margin: 10px;
+}
+.NavbarWrap{
+    padding-right:10%;
+    flex-grow: 1;
+    .logo{
+        display: none;
+    }
+    .login{
+        display: none;   
+    }
+    &_Header{
+        color: #4f515b;
+        border-bottom: 1px solid #4f515b;
+        margin-bottom: 1rem;
+        padding: 5% 10%;
+    }
+    &_menulist{
+        display: block;
+
+        &_item{
+            // position: relative;
+            display: block;
+            
+            &_link{
+                display: flex;
+                padding: 5% 0%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &_link:hover{
+                color: #8224e3;
+            }
+            
+            &_dropdown{
+                margin-left: 10%;
+                display: none;
+            }
+        }
+        
+    }
+}
+.ShowSubcategoruCross::after{
+    content: '+';
+}
+.show{
+    display: block;
+}
+
+.contactsHeader{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .Navbutton{
+        display: none;
+    }
+    .NavbarWrap{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1% 10%;
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: 100%;
+        .logo{
+            display: block;
+        }
+        .login{
+            display: flex;
+            align-items: center;
+            width: 10%;
+            justify-content: space-around;
+        }
+        &_Header{
+            display: none;
+        }
+        &_menulist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding: 0 5%;
+            box-sizing: border-box;
+            &_item{
+                position: relative;
+                flex-grow: 1;
+                
+                &_link{
+                    display: flex;
+                    padding: 5% 20%;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                &_dropdown{
+                    margin-left: 10%;
+                    display: none;
+                    position: absolute;
+                    z-index: 15;
+                    background-color: #fff;
+                    border-top: 1px solid #8224e3;
+                    border-radius: 12px;
+                    flex-direction: column;
+                    width: 10rem; 
+                    box-sizing: border-box;
+                    top: 100%;
+                }
+            } 
+            &_item:hover ul{
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.AppealChat{
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .ChatWrap{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #8224e3;
+        border-radius: 15px;
+        background-color: #fff;
+        color: #4f5261;
+        width: 80%;
+        .ChatHeader{
+            padding: 2% 5%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            background-color: #4f5261;
+            color: #fff;
+            border-radius: 15px;
+            .ChatHeaderFrom{
+                padding: 0 2%;
+            }
+            .ChatHeaderAppel{
+                padding: 0 2%;
+            }
+        }
+        .ChatMessages{
+            padding: 5% 0;
+            width: 100%;
+            background-color: #23a5a5;
+            color: #4f5261;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            .ChatMessage{
+                width: 50%;
+                .Message{
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                }
+                
+            }
+            .ChatMessageAnswer{
+                width: 50%;
+                align-self: flex-end;
+                .Message{
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                }
+            }
+            
+        }
+    }
+}

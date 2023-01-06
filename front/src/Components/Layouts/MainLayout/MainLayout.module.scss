@@ -1,0 +1,64 @@
+.MainLayout {
+    display: flex;
+    width: 100%;
+}
+
+.active{
+    padding-right: 10%;
+    transition: 1s;
+}
+.App {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.Navbutton{
+    display: block;
+    color: #8224e3;
+}
+.ContentWrap {
+    flex-grow: 1;
+}
+
+.bg_video {
+    /* width: 100%;
+    min-height: 100vh; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.App::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+}
+
+.Appheader {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.MenuButton {
+    color: #8224e3;
+}
